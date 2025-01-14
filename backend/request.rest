@@ -1,0 +1,28 @@
+### GET USERS
+GET http://localhost:5000/users
+
+### GET USERS BY ID
+GET http://localhost:5000/users/1
+
+### CREATE USER
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Talia Aprianti",
+    "email": "talia@gmail.com",
+    "gender": "Female"
+}
+
+### UPDATE USER
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "gender": "Male"
+}
+
+### DELETE USERS
+DELETE http://localhost:5000/users/2
